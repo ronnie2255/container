@@ -15,13 +15,13 @@ jobs:
       image: node:16
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb
-      MONGODB_CLUSTER_ADDRESS: mongodb
+      MONGODB_CLUSTER_ADDRESS: cluster0.dwntpdy.mongodb.net
       MONGODB_USERNAME: root
       MONGODB_PASSWORD: example
       PORT: 8080
     services:
       mongodb:
-        image: mongo:4.4
+        image: mongo
         # ports:
         #   - 27017:27017
         env:
